@@ -1,5 +1,5 @@
 module "main" {
-  source = "./modules/main"
+  source = "./modules"
 
   region          = var.region
   cluster_name    = var.cluster_name
@@ -10,4 +10,10 @@ module "main" {
   pub_sub_count   = var.pub_sub_count
   pub_sub_block   = var.pub_sub_block
   pub_sub_azs     = var.pub_sub_azs
+  key_name        = var.key_name
+  ami             = var.ami
+  first_instance_name = var.first_instance_name
+  first_instance_type = var.first_instance_type
+  second_instance_name = var.second_instance_name
+  second_instance_type = var.second_instance_type   
 }
