@@ -1,0 +1,12 @@
+vpc_cidr = "10.0.0.0/16"
+pri_sub_count = 2
+pri_sub_block = [ "10.0.0.0/24", "10.0.0.16/24" ]
+pri_sub_azs = [ "us-east-1a", "us-east-1b" ]
+pub_sub_count = 2
+pub_sub_block = [ "10.0.0.32/24", "10.0.0.48/24" ]
+pub_sub_azs = [ "us-east-1c", "us-east-1d" ]
+ami = "ami-0ecb62995f68bb549"
+first_instance_name = "jenkins-instance"
+first_instance_type = "t2.large"
+second_instance_type = "t2.medium"
+second_instance_name = "sonarqube-instance"
